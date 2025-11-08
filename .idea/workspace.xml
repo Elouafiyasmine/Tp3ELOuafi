@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Tp3ElOuafi:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cf4b36f-be25-4847-b883-6005a514a5d8" name="Changes" comment="modificqtion du resources" />
+    <list default="true" id="2cf4b36f-be25-4847-b883-6005a514a5d8" name="Changes" comment="modification du HelloResource" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +17,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="35CZlUldcJG5pyuNE6gR0UreuGp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762616165046</updated>
-      <workItem from="1762616168132" duration="866000" />
+      <workItem from="1762616168132" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Creation du Tp">
       <option name="closed" value="true" />
@@ -107,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762617010469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="modification du HelloResource">
+      <option name="closed" value="true" />
+      <created>1762617489246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762617489246</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +148,7 @@
     <MESSAGE value="Creation du Tp" />
     <MESSAGE value="depot du dependencies inital" />
     <MESSAGE value="modificqtion du resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificqtion du resources" />
+    <MESSAGE value="modification du HelloResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification du HelloResource" />
   </component>
 </project>
