@@ -1,20 +1,25 @@
 package ma.emsi.elouafi.tp3elouafi.llm;
 
 import dev.langchain4j.service.SystemMessage;
-import dev.langchain4j.service.UserMessage;
 
+/**
+ * On garde une méthode qui prend un "prompt" unique.
+ * Le prompt sera formaté côté LlmClient pour injecter (lieu, nb).
+ * Le retour est ReponseGuide : LangChain4j essaiera de parser le JSON du modèle.
+ */
 public interface GuideTouristique {
 
     @SystemMessage("""
         Tu es un guide touristique.
-        Quand on te donne le nom d'une ville ou d'un pays, tu dois renvoyer exactement ce JSON (sans aucun texte avant/après, sans Markdown) :
-        {
-          "ville_ou_pays": "nom de la ville ou du pays",
-          "endroits_a_visiter": ["endroit 1", "endroit 2"],
-          "prix_moyen_repas": "<prix> <devise du pays>"
-        }
-        - Ne retourne rien d'autre que ce JSON valide.
-        - Remplis "endroits_a_visiter" avec exactement le nombre demandé dans le prompt utilisateur si précisé (sinon 2).
+        Rappels STRICTS de format :
+        - Réponds UNIQUEMENT avec un JSON, sans texte avant/après, sans Markdown.
+        - Le JSON DOIT avoir exactement cette structure :
+          {
+            "ville_ou_pays": "nom de la ville ou du pays",
+            "endroits_a_visiter": ["endroit 1", "endroit 2", "..."],
+            "prix_moyen_repas": "<prix> <devise du pays>"
+          }
+        - Pas d'autres clés. Pas de commentaires. Pas de backticks. Pas d'explications.
         """)
-    ReponseGuide chat(@UserMessage String prompt);
+    ReponseGuide chat(String prompt);
 }
